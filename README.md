@@ -1,6 +1,6 @@
 Amphire Lang
 =======
-Amphire is a Python-like programming language interpreter. In this project by MS9 you can find a more functional lang.
+Amphire is a Python-like programming language. In this project by MS9, we have fixed some aspects we belived lacking in python. Scroll to the bottom to find the core idea.
 
 The project contains:
 
@@ -32,33 +32,18 @@ What the language looks like:
 
 You can find more examples in ``tests`` directory.
 
-## Amphire - Run through AmpCLI - ComingSoon
-Find AmpCLI at this github profile.
+#### To run: python3 -m amphire file.abr
+
+## Amphire - Run through AmpCLI - New
+Run `python3 AmpCLI/cli.py` to run
 ```
+# Make sure to enter correct name with extension
 # To run a .abr amphire file:
-# WARNING: make sure to read about setup.abr files below.
-$ amp run setup
+$ amp setup
+# or if a heavy file
+$ amp -render:first:setup
 ```
-## Setup - Setup.abr files - ComingSoon
-Setup.abr files tell AmpCLI on which files to run. For now you can run 1 file at a time with diffrent options:
-  ```
-  setup.abr
-  --------
-1 projevt.define = projectName, version
-2 filename.abr # file to run
-  ```
-## AmpSecure Package - ComingSoon
-To password protect your .abr files, first have these:
-```
-- AmpCLI
-- A abr file in Folder
-```
-To password protect, do as follows:
-```
-  $ amp pkg get secure
-$ amp -secure setup.py # will use the filename inside
->> Enter Password: EnterYourPassword
-```
+
 ## AmpPython Module - amppy - ComingSoon
 
 AmpPython is an extension that is not part of this language. Instead it is a module of Python3 that extends functions. Many of the greatest python3 functions will be baked into one library.
@@ -74,13 +59,18 @@ Ampmath is a next-gen library that combines intense math functions all into one 
 $ pip install ampmath
 ```
 
-## AmpPythonRun - aPyRun - ComingSoon
-aPyRun allows you to run premade scripts in AmpCLI. It includes many functions that are listed in the documentation in this github profile.
-#### Install - ComingSoon
-```
-$ amp pkg get apyrun
-```
-#### Example Run - ComingSoon
-```
-$ amp -apy tetris -py
-```
+## Why so mixed with python?
+You may have noticed that a lot of this code and modules work with python and sometimes only with  python and not Amphire becuase of the core idea of the project:
+> The core idea of Amphire is for not to replace Python but to work alongside it as an extention to patch certain parts that don't live up to modern-day workflows. This might mean creating Amphire and it might mean creating python packages.
+## Whats Next
+Amphire is a project with no limits.
+We want to, after the basic ecosystem is set, improve Amphire so that .abr files can work with or include Python.
+## Versions Roadmap
+This symbol *, means done and the next version or patch is in dev.
+| Version      | Patches |
+| ----------- | ----------- |
+| 1 *     | X       |
+| 2*   | Y, Z, N        |
+|3*| V, B, O|
+|RE|1*, 2*, 3|
+|XER|Qf, Qm, Qe|

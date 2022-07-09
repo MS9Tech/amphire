@@ -5,7 +5,7 @@ Main
 Command line interface.
 """
 import argparse
-from cosmic import __version__ as version, interpreter
+from amphire import __version__ as version, interpreter
 
 
 try:
